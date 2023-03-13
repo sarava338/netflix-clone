@@ -15,8 +15,6 @@ const Row = ({ title, fetchUrl }) => {
     fetchApi();
   }, [fetchUrl]);
 
-  console.log(movies);
-
   return (
     <article className="row">
       <h2>{title}</h2>

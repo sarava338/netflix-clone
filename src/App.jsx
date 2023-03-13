@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Nav />
-      <Header />
+      <Header fetchUrl={requests.fetchTrending} />
       <article>
         <Row
           title="NETFLIX ORIGIALS"
