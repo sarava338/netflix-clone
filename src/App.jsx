@@ -9,7 +9,7 @@ function App() {
     <>
       <Nav />
       <Header fetchUrl={requests.fetchTrending} />
-      <article>
+      <article className="rows">
         <Row
           title="NETFLIX ORIGIALS"
           fetchUrl={requests.fetchNetflixOriginals}

@@ -1,3 +1,13 @@
 .card-wrapper{
+  margin: 0.5vh 0;
+  padding: 20px;
   display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}
+
+.card-wrapper::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "../../axios";
-import './header.css'
+import "./header.css";
 
 const Header = ({ fetchUrl }) => {
   const baseUrl = "https://image.tmdb.org/t/p/original";
@@ -30,17 +30,19 @@ const Header = ({ fetchUrl }) => {
         backgroundPosition: "center center",
       }}
     >
-      <h1 className="header-title">
-        {movie?.title ||
-          movie?.name ||
-          movie?.original_name ||
-          movie?.original_title}
-      </h1>
-      <div className="header-buttons">
-        <button className="header-button">play</button>
-        <button className="header-button">view</button>
-      </div>
-      <p className="header-description">{movie.overview}</p>
+      <section className="header-content">
+        <h1 className="header-title">
+          {movie?.title ||
+            movie?.name ||
+            movie?.original_name ||
+            movie?.original_title}
+        </h1>
+        <div className="header-buttons">
+          <button className="header-button">play</button>
+          <button className="header-button">view</button>
+        </div>
+        <p className="header-description">{movie.overview}</p>
+      </section>
     </header>
   );
 };
