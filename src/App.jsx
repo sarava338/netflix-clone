@@ -7,8 +7,8 @@ import "./App.css";
 function App() {
   return (
     <>
-      {/* <Nav /> */}
-      {/* <Header /> */}
+      <Nav />
+      <Header />
       <article>
         <Row
           title="NETFLIX ORIGIALS"
