@@ -1,28 +1,28 @@
-import { useState } from "react";
+import Heart from "../../../src/assets/svg/Heart";
+import HeartFill from "../../../src/assets/svg/HeartFill";
+import SaveToPlayList from "../../../src/assets/svg/SaveToPlayList";
+import RemoveFromPlayList from "../../../src/assets/svg/RemoveFromPlayList";
+
 import "./card.css";
 
 const Card = ({ movie }) => {
   const baseUrl = "https://image.tmdb.org/t/p/original";
 
-  const [show, setShow] = useState(false);
-
   return (
-    <div
-      className="card"
-      onMouseEnter={() => setShow(true)}
-      onMouseLeave={() => setShow(false)}
-    >
+    <div className="card">
       <img
         className="card-img"
         src={`${baseUrl}${movie.poster_path}`}
         alt={movie.name}
       />
-      {show && (
-        <span className="card-buttons">
-          <button className='like-button'>Like</button>
-          <button className="save-button">Save</button>
+      <span className="card-buttons">
+        <span className="like-button">
+          <HeartFill />
         </span>
-      )}
+        <span className="save-button">
+          <SaveToPlayList />
+        </span>
+      </span>
     </div>
   );
 };
