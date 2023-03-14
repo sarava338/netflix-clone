@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./card.css";
-import "./";
+
 const Card = ({ movie }) => {
   const baseUrl = "https://image.tmdb.org/t/p/original";
 
