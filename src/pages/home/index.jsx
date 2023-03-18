@@ -3,7 +3,7 @@ import React from 'react'
 import Header from '../../components/header'
 import Row from '../../components/row'
 
-import requests from '../../requests'
+import requests from '../../utils/requests'
 
 const Home = () => {
   return (

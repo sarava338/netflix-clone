@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "../card";
-import axios from "../../axios";
+import axios from "../../utils/axios";
 import "./row.css";
 
 const Row = ({ title, fetchUrl }) => {
