@@ -1,18 +1,22 @@
-nav{
+.navbar{
   z-index: 2;
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
-  position: sticky;
-  position: -webkit-sticky;
   top: 0px;
 }
 
-nav>a{
-  text-decoration: none;
-  color: white;
+.page-links>ul{
+  display: flex;
+  justify-content: space-between;
 }
-nav>a:visited{
+
+.page-links>ul>li{
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.navbar>a, .navbar>a:visited{
   text-decoration: none;
   color: white;
 }

@@ -18,9 +18,7 @@ const Header = ({ fetchUrl }) => {
     }
     fetchApi();
   }, [fetchUrl]);
-
-  console.log(movie);
-
+  
   return (
     <header
       className="header"
