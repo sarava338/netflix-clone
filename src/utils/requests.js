@@ -1,5 +1,7 @@
 const API_KEY = "db4691ac22460a7d6cd7cac1eeef730a";
 
+export const baseUrl = "https://image.tmdb.org/t/p/original";
+
 const requests = {
   fetchTrending: `trending/all/week?api_key=${API_KEY}&language=en-US`,
   fetchNetflixOriginals : `discover/tv?api_key=${API_KEY}&with_networks=213`,

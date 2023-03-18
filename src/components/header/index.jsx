@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from "../../utils/axios";
+import { baseUrl } from "../../utils/requests";
 import "./header.css";
 
 const Header = ({ fetchUrl }) => {
-  const baseUrl = "https://image.tmdb.org/t/p/original";
 
   const [movie, setMovie] = useState([]);
 
