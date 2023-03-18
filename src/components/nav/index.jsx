@@ -21,7 +21,7 @@ const Nav = () => {
               rel="noreferrer"
               href="https://github.com/sarava338/"
             >
-              @ sarava338
+              @sarava338
             </a>
           </ul>
         </nav>
