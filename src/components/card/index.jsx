@@ -3,11 +3,11 @@ import Heart from "../../../src/assets/svg/Heart";
 import HeartFill from "../../../src/assets/svg/HeartFill";
 import SaveToPlayList from "../../../src/assets/svg/SaveToPlayList";
 import RemoveFromPlayList from "../../../src/assets/svg/RemoveFromPlayList";
+import { baseUrl } from '../../utils/requests';
 
 import "./card.css";
 
 const Card = ({ movie }) => {
-  const baseUrl = "https://image.tmdb.org/t/p/original";
   
   const [like, setLike] = useState(false)
   const [save, setSave] = useState(false)
