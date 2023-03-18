@@ -12,14 +12,16 @@ const Card = ({ movie }) => {
   const [like, setLike] = useState(false)
   const [save, setSave] = useState(false)
 
-  const handleToLike = () => {
+  const handleToLike = (e) => {
     if (like) setLike(false)
     else setLike(true)
+    console.log(e.target)
   }
 
-  const handleToSave = () => {
+  const handleToSave = (e) => {
     if(save) setSave(false)
     else setSave(true)
+    console.log(e.target)
   }
   
   return (
