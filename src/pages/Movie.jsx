@@ -1,14 +1,10 @@
-import Header from "../components/header";
+import MovieBackGround from "../components/moviebackground";
 
 const Movie = (movie) => {
 
-
-
-  return <>
-    <article>
-      <Header />
-    </article>
-  </>;
+  return <MovieBackGround movie={movie}>
+  <h1>Movie</h1>
+  </MovieBackGround>;
 };
 
 export default Movie;
