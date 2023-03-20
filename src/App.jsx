@@ -4,6 +4,7 @@ import Nav from "./components/nav";
 import Home from "./pages/home";
 import Login from './pages/login'
 import NoPage from './pages/nopage'
+import Movie from './pages/movie'
 
 import "./App.css";
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path='/movie/:id' element={<Movie />} />
 
           <Route path="*" element={<NoPage />} />
         </Routes>

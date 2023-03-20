@@ -3,7 +3,7 @@ import React from 'react'
 const Login = () => {
 
   const handleSubmit = () => {
-    const form = document.getElementById('form')
+    const form = document.getElementsByClassName('form')[0]
     const userCredential = {
       username: form.username.value,
       password: form.password.value
@@ -15,7 +15,7 @@ const Login = () => {
 
   return (
     <>
-        <form id='form' onSubmit={(e)=> e.preventDefault()}>
+        <form className='form' onSubmit={(e)=> e.preventDefault()}>
           <div>
             <label htmlFor="username"> Username : </label>
             <input id='username' name='username' type="text" placeholder='username' />
