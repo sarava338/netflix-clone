@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Nav from "./components/nav";
-import Home from "./pages/home";
-import Login from './pages/login'
-import NoPage from './pages/nopage'
-import Movie from './pages/movie'
+import Home from "./pages/Home";
+import Login from './pages/Login'
+import NoPage from './pages/NoPage'
+import Movie from './pages/Movie'
 
 import "./App.css";
 
