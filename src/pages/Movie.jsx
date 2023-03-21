@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import MovieDetail from "../components/moviedetail";
-import { API_KEY } from "../utils/requests";
+import { API_KEY, baseUrl } from "../utils/requests";
 
 const Movie = () => {
 
@@ -15,14 +15,22 @@ const Movie = () => {
     async function fetchApi() {
       const request = await axios.get(fetchUrl);
       setMovie(request.data);
-      return request;
+      return request.data;
     }
     fetchApi();
   }, [fetchUrl]);
 
+  console.log(movie);
+
   return (
-  <MovieDetail movie={movie}>
-  </MovieDetail>
+    <main
+      className="movie-back-ground"
+      style={{
+        backgroundImage: `url(${baseUrl}${movie?.backdrop_path})`,
+      }}
+    >
+      <MovieDetail movie={movie} />
+    </main>
   )
 };
 

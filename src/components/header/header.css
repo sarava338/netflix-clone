@@ -1,41 +1,7 @@
 .header {
-  color: white;
   object-fit: contain;
   height: 75vh;
-  box-shadow: inset ;
-}
-.header-content, .header-content > * {
-  background-color: transparent;
-}
-
-.header-content {
-  padding-top: 18vh;
-  margin-left: 2vw;
-  width: 45vw;
-}
-
-.header-title {
-  margin-bottom: 10px;
-}
-
-.header-button {
-  margin: 10px;
-  background-color: red;
-  color: white;
-  width: 80px;
-  height: 30px;
-  border: none;
-  border-radius: 10%;
-  -moz-transition: transform 0.3s ease;
-  -o-transition: transform 0.3s ease;
-  transition: transform 0.3s ease;
-}
-
-.header-description {
-  margin-top: 10px;
-}
-
-.header-button:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+  box-shadow: inset;
+  background-size: cover;
+  background-position: center center;
 }

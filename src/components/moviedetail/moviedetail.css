@@ -1,3 +1,41 @@
+.movie-content, .movie-content > * {
+  background-color: transparent;
+}
+
+.movie-content {
+  padding-top: 18vh;
+  margin-left: 2vw;
+  width: 45vw;
+}
+
+.movie-title {
+  margin-bottom: 10px;
+  font-size: 2rem;
+
+}
+
+.movie-button {
+  margin: 10px;
+  background-color: red;
+  color: white;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 10%;
+  -moz-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.movie-description {
+  margin-top: 10px;
+}
+
+.movie-button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .movie-back-ground{
   position: absolute;
   height: 100vh;
@@ -7,17 +45,15 @@
   background-color: transparent; 
 }
 
- .movie-detail {
+.movie-detail {
   margin: 25vh 4vw 0;
 }
-.movie-detail, .movie-detail>*{
-background-color: transparent;
-}
-.movie-title {
-  font-size: 3.5rem;
- }
 
- .movie-overview{
+.movie-detail, .movie-detail>*{
+  background-color: transparent;
+}
+
+.movie-overview {
   margin: 1vh 0;
   width: 45vw;
  }

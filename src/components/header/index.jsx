@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "../../utils/axios";
 import { baseUrl } from "../../utils/requests";
+import MovieDetail from "../moviedetail";
 import "./header.css";
 
 const Header = ({ fetchUrl }) => {
@@ -23,24 +24,10 @@ const Header = ({ fetchUrl }) => {
     <header
       className="header"
       style={{
-        backgroundImage: `url(${baseUrl}${movie?.backdrop_path})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center center",
+        backgroundImage: `url(${baseUrl}${movie?.backdrop_path})`
       }}
     >
-      <section className="header-content">
-        <h1 className="header-title">
-          {movie?.title ||
-            movie?.name ||
-            movie?.original_name ||
-            movie?.original_title}
-        </h1>
-        <div className="header-buttons">
-          <button className="header-button">play</button>
-          <button className="header-button">view</button>
-        </div>
-        <p className="header-description">{movie.overview}</p>
-      </section>
+      <MovieDetail movie={movie}/>
     </header>
   );
 };
