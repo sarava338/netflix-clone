@@ -45,7 +45,7 @@
   background-color: transparent; 
 }
 
-.movie-detail {
+.movie-detail, .movie-page-details {
   margin: 25vh 4vw 0;
 }
 
@@ -56,4 +56,17 @@
 .movie-overview {
   margin: 1vh 0;
   width: 45vw;
- }
+}
+
+.movie-page-details{
+  position: absolute;
+  bottom: 3vh;
+}
+
+.movie-page-list{
+  list-style: none;
+}
+
+.movie-page-details, .movie-page-list, .movie-page-list>*, .movie-page-list>*>*, li>span {
+  background-color: transparent;
+}

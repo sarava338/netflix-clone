@@ -20,8 +20,6 @@ const Movie = () => {
     fetchApi();
   }, [fetchUrl]);
 
-  console.log(movie);
-
   return (
     <main
       className="movie-back-ground"
@@ -29,7 +27,7 @@ const Movie = () => {
         backgroundImage: `url(${baseUrl}${movie?.backdrop_path})`,
       }}
     >
-      <MovieDetail movie={movie} />
+      <MovieDetail movie={movie} isForMoviePage/>
     </main>
   )
 };
