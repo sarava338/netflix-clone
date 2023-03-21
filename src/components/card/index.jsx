@@ -1,19 +1,24 @@
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { baseUrl } from '../../utils/requests';
 
 import "./card.css";
 
 const Card = ({ movie }) => {
 
+  const navigate = useNavigate()
+
+  const showMoviePage = () => {
+    navigate(`movie/${movie.id}`)
+  }
+
   return (
     <div className="card">
-      <Link to={`/movie/${movie.id}`} state={movie} >
-        <img
+        <img 
+          onClick={showMoviePage}
           className="card-img"
           src={`${baseUrl}${movie.poster_path}`}
           alt={movie.name}
         />
-      </Link>
     </div>
   );
 };
