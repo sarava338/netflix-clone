@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   color: white;
+  background-color: black;
 }
 
 .rows{
-  margin-top: 2vh;
-  margin-left: 2vw;
+  padding: 2vh 2vw;
 }

@@ -9,8 +9,10 @@
 
  .movie-detail {
   margin: 25vh 4vw 0;
- }
-
+}
+.movie-detail, .movie-detail>*{
+background-color: transparent;
+}
 .movie-title {
   font-size: 3.5rem;
  }

@@ -3,13 +3,11 @@
   top: 0px;
   right: 0;
   left: 0;
-  background-color: #111;
   z-index: 1;
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
 }
-
 .page-links>ul{
   display: flex;
   justify-content: space-between;
