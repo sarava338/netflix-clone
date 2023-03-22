@@ -16,3 +16,9 @@
   transform: scale(1.1);
   cursor: pointer;
 }
+
+.for-movie-page{
+  width: 45vw;
+  margin: 3em;
+  background-color: transparent;
+}

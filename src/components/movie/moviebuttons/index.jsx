@@ -4,16 +4,10 @@ import "./moviebuttons.css";
 export default function MovieButtons({ movieID, isForMoviePage }) {
   const navigate = useNavigate();
 
-  const styleForMovieButtons = {
-    margin: "3em",
-    backgroundColor: "transparent",
-  };
-
   return (
     <>
-      <div
-        className="movie-buttons"
-        style={isForMoviePage && styleForMovieButtons}
+      <section
+        className={`movie-buttons ${isForMoviePage && "for-movie-page"}`}
       >
         <button className="movie-button">play</button>
         {!isForMoviePage && (
@@ -24,7 +18,7 @@ export default function MovieButtons({ movieID, isForMoviePage }) {
             view
           </button>
         )}
-      </div>
+      </section>
     </>
   );
 }
