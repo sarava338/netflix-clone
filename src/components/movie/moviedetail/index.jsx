@@ -13,7 +13,7 @@ const MovieDetail = ({ movie, isForMoviePage }) => {
             movie?.original_name ||
             movie?.original_title}
         </h1>
-        {!isForMoviePage && <MovieButtons />}
+        {!isForMoviePage && <MovieButtons movieID={movie.id} />}
         <p className="movie-description">{movie?.overview}</p>
       </section>
 
