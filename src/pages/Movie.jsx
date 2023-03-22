@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import MovieDetail from "../components/moviedetail";
+import MovieDetail from "../components/movie/moviedetail";
 import { API_KEY, baseUrl } from "../utils/requests";
 
 const Movie = () => {

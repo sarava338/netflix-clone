@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "../../utils/axios";
 import { baseUrl } from "../../utils/requests";
-import MovieDetail from "../moviedetail";
+import MovieDetail from "../movie/moviedetail";
 import "./header.css";
 
 const Header = ({ fetchUrl }) => {
