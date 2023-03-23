@@ -2,8 +2,6 @@ import MovieButtons from "../moviebuttons";
 import "./moviedetail.css";
 
 const MovieDetail = ({ movie, isForMoviePage }) => {
-  isForMoviePage && console.log(movie);
-
   return (
     <>
       <section className="movie-content">
