@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./nav.css";
 
 const Nav = () => {
-  const [bgColor, setBgColor] = useState("black");
+  const [bgColor, setBgColor] = useState("transparent");
 
   window.addEventListener("scroll", () => {
     window.scrollY >= 500 ? setBgColor("black") : setBgColor("transparent");
