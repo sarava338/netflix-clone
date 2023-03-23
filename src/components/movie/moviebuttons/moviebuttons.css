@@ -1,3 +1,6 @@
+.movie-buttons{
+  background-color: transparent;
+}
 .movie-button {
   margin: 10px;
   background-color: red;
@@ -11,7 +14,6 @@
   transition: transform 0.3s ease;
 }
 
-
 .movie-button:hover {
   transform: scale(1.1);
   cursor: pointer;
@@ -19,6 +21,6 @@
 
 .for-movie-page{
   width: 45vw;
-  margin: 3em;
+  margin: 1em;
   background-color: transparent;
 }

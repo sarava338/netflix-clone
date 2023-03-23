@@ -1,53 +1,26 @@
-.movie-content, .movie-content > * {
+.movie-detail,
+.movie-content, .movie-title, .movie-description,
+.movie-page-details, .movie-page-list, .movie-page-list >*, .genre {
   background-color: transparent;
 }
 
-.movie-content {
-  padding-top: 18vh;
-  margin-left: 2vw;
-  width: 45vw;
+.movie-detail {
+  position: absolute;
+  margin: 0 25%;
+  text-align: center;
 }
 
 .movie-title {
-  margin-bottom: 10px;
   font-size: 2rem;
-
 }
 
-.movie-description {
-  margin-top: 10px;
-}
 .movie-back-ground{
-  position: absolute;
   height: 100vh;
   width: 100vw;
   background-size: cover;
   background-position: center center;
-  background-color: transparent; 
-}
-
-.movie-detail, .movie-page-details {
-  margin: 25vh 4vw 0;
-}
-
-.movie-detail, .movie-detail>*{
-  background-color: transparent;
-}
-
-.movie-overview {
-  margin: 1vh 0;
-  width: 45vw;
-}
-
-.movie-page-details{
-  position: absolute;
-  bottom: 3vh;
 }
 
 .movie-page-list{
   list-style: none;
-}
-
-.movie-page-details, .movie-page-list, .movie-page-list>*, .movie-page-list>*>*, li>span {
-  background-color: transparent;
 }

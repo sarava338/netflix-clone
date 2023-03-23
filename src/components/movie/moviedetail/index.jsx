@@ -1,9 +1,21 @@
+import { useEffect, useState } from "react";
 import MovieButtons from "../moviebuttons";
 import "./moviedetail.css";
 
 const MovieDetail = ({ movie, isForMoviePage }) => {
+  const [bottomStyle, setBottomStyle] = useState();
+
+  useEffect(() => {
+    isForMoviePage ? setBottomStyle("30px") : setBottomStyle("180px");
+  }, [isForMoviePage]);
+
   return (
-    <>
+    <article
+      className="movie-detail"
+      style={{
+        bottom: bottomStyle,
+      }}
+    >
       <section className="movie-content">
         <h1 className="movie-title">
           {movie?.title ||
@@ -40,7 +52,7 @@ const MovieDetail = ({ movie, isForMoviePage }) => {
           </ul>
         </section>
       )}
-    </>
+    </article>
   );
 };
 
