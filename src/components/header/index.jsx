@@ -24,10 +24,11 @@ const Header = ({ fetchUrl }) => {
     <header
       className="header"
       style={{
-        backgroundImage: `url(${baseUrl}${movie?.backdrop_path})`
+        backgroundImage: `url(${baseUrl}${movie?.backdrop_path})`,
       }}
     >
-      <MovieDetail movie={movie}/>
+      <MovieDetail movie={movie} />
+      <div className="header-fade-bottom"></div>
     </header>
   );
 };
