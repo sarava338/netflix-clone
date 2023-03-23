@@ -6,14 +6,14 @@ const MovieDetail = ({ movie, isForMoviePage }) => {
   const [bottomStyle, setBottomStyle] = useState();
 
   useEffect(() => {
-    isForMoviePage ? setBottomStyle("10vh") : setBottomStyle("30vh");
+    isForMoviePage ? setBottomStyle("10%") : setBottomStyle("30%");
   }, [isForMoviePage]);
 
   return (
     <article
       className="movie-detail"
       style={{
-        bottom: bottomStyle,
+        bottom: bottomStyle, //Need to configure for mobile view
       }}
     >
       <section className="movie-content">
