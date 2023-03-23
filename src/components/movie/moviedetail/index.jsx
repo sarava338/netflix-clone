@@ -9,6 +9,10 @@ const MovieDetail = ({ movie, isForMoviePage }) => {
     isForMoviePage ? setBottomStyle("10%") : setBottomStyle("30%");
   }, [isForMoviePage]);
 
+  const truncate = (str, n) => {
+    return str?.length > n ? `${str.substr(0, n - 1)}...` : str;
+  };
+
   return (
     <article
       className="movie-detail"
@@ -24,7 +28,7 @@ const MovieDetail = ({ movie, isForMoviePage }) => {
             movie?.original_title}
         </h1>
         {!isForMoviePage && <MovieButtons movieID={movie.id} />}
-        <p className="movie-description">{movie?.overview}</p>
+        <p className="movie-description">{truncate(movie?.overview, 150)}</p>
       </section>
 
       {isForMoviePage && <MovieButtons isForMoviePage />}
