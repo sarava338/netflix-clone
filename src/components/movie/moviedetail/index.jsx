@@ -6,7 +6,7 @@ const MovieDetail = ({ movie, isForMoviePage }) => {
   const [bottomStyle, setBottomStyle] = useState();
 
   useEffect(() => {
-    isForMoviePage ? setBottomStyle("30px") : setBottomStyle("180px");
+    isForMoviePage ? setBottomStyle("10vh") : setBottomStyle("30vh");
   }, [isForMoviePage]);
 
   return (
