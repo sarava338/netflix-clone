@@ -10,26 +10,32 @@ const Nav = () => {
     window.scrollY >= 500 ? setBgColor("black") : setBgColor("transparent");
   });
 
-  return (
-    <>
-      <nav
-        className="navbar"
-        style={{
-          backgroundColor: bgColor,
-        }}
-      >
-        <p>Sarava338-netflix-clone</p>
+document.getElementsByName("nav").forEach((element) => {
+  element.style.backgroundColor = bgColor;
+});
 
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/sarava338/"
-        >
-          @sarava338
-        </a>
-      </nav>
-    </>
-  );
+return (
+  <>
+    <nav
+      name="nav"
+      className="navbar"
+      style={{
+        backgroundColor: bgColor,
+      }}
+    >
+      <p name="nav">Sarava338-netflix-clone</p>
+
+      <a
+        name="nav"
+        target="_blank"
+        rel="noreferrer"
+        href="https://github.com/sarava338/"
+      >
+        @sarava338
+      </a>
+    </nav>
+  </>
+);
 };
 
 export default Nav;
