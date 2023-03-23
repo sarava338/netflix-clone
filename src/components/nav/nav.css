@@ -8,15 +8,6 @@
   display: flex;
   justify-content: space-between;
 }
-.page-links>ul{
-  display: flex;
-  justify-content: space-between;
-}
-
-.page-links>ul>li{
-  list-style: none;
-  margin-right: 1rem;
-}
 
 .navbar>a, .navbar>a:visited{
   text-decoration: none;
