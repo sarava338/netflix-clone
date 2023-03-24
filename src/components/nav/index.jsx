@@ -14,6 +14,7 @@ const Nav = () => {
 
   return (
     <>
+      <div className="nav-fade-top"></div>
       <nav
         name="nav"
         className="navbar"
